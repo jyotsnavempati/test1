@@ -1,0 +1,38 @@
+---
+layout: default
+permalink: /
+thumb_force_logo: true
+---
+
+{%- include amsf/core -%}
+
+<!-- Article wrapper, limit width -->
+<article>
+
+  <!-- Post title -->
+  <header>
+
+    <h1 class="image-title">
+      Ukranian Anarchist Movement
+      <img src="{{ amsf_user_assets }}/svg/amsf.svg">
+    </h1>
+
+    <h2 class="sub-title">Welcome</h2>
+  </header>
+
+  <div class="page-content">
+    <p>Welcome! This site highlights the history of the Ukrainian anarchist movements of the early twentieth century, tracing their roots from the late 19th century through the Soviet period. The site was created and designed by Jyotsna Vempati (GRA) and Ian Goodale, European Studies Librarian at the University of Texas at Austin Libraries.
+
+    <br/>
+    <br/>
+    Resources for further reading are curated both from open internet sources and materials from the UT-Austin Libraries’ collections, and were selected for scholarly value and contributions to the understanding of this facet of Ukrainian political and social history. The site also features a timeline of the basic events in late 19th-century and early 20th century Ukrainian anarchism.
+  </p>
+
+
+
+    <h2>Table of Contents</h2>
+    {% for post in site.tags.pages %}
+      {%- include themes/curtana/includes/page-item.html -%}
+    {% endfor %}
+  </div>
+</article>

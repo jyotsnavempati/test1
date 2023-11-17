@@ -1,0 +1,44 @@
+Searching 220 files for "includes/page-item.html"
+
+~/Desktop/Test/_app/_pages/index.html:
+   26      <h2>Getting Started</h2>
+   27      {% for post in site.tags.getting-started %}
+   28:       {%- include themes/curtana/includes/page-item.html -%}
+   29      {% endfor %}
+   30  
+   31      <h2>Customization</h2>
+   32      {% for post in site.tags.customization %}
+   33:       {%- include themes/curtana/includes/page-item.html -%}
+   34      {% endfor %}
+   35  
+   36      <h2>Theme Curtana</h2>
+   37      {% for post in site.tags.curtana %}
+   38:       {%- include themes/curtana/includes/page-item.html -%}
+   39      {% endfor %}
+   40  
+   41      <h2>Deployment</h2>
+   42      {% for post in site.tags.deployment %}
+   43:       {%- include themes/curtana/includes/page-item.html -%}
+   44      {% endfor %}
+   45  
+   46      <h2>Miscellaneous</h2>
+   47      {% for post in site.tags.miscellaneous %}
+   48:       {%- include themes/curtana/includes/page-item.html -%}
+   49      {% endfor %}
+   50    </div>
+
+~/Desktop/Test/_app/_pages/news.html:
+    7  
+    8  {% for post in site.categories.news %}
+    9:   {%- include themes/curtana/includes/page-item.html -%}
+   10  {% endfor %}
+   11  
+
+~/Desktop/Test/_app/_pages/themes/curtana/example-news.html:
+    8  
+    9  {% for post in site.categories.news %}
+   10:   {%- include themes/curtana/includes/page-item.html -%}
+   11  {% endfor %}
+   12  
+
+7 matches across 3 files
